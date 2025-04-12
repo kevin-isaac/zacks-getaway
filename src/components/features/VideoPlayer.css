@@ -1,0 +1,33 @@
+.video-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  
+  /* White fade overlay on the left and right sides */
+  .video-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    z-index: 2;
+  
+    background: linear-gradient(
+      to right,
+      white 0%,
+      transparent 10%,
+      transparent 90%,
+      white 100%
+    );
+  }
+  

@@ -1,0 +1,118 @@
+/* CustomDatePicker.css */
+
+/* Style the input field of the date picker */
+.react-datepicker__input-container input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 200px;
+    box-sizing: border-box;
+  }
+  
+  /* Style the calendar container */
+  .react-datepicker__triangle {
+ 
+  }
+  
+  .react-datepicker {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: auto;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    z-index: 9999;
+    animation-name: fader;
+    animation-duration: 0.1s;
+  }
+  
+  /* Style the days of the week (header) */
+  .react-datepicker__header {
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Style the day names (Mon, Tue, etc.) */
+  .react-datepicker__day-name {
+    font-weight: bold;
+    color: #666;
+    display:inline;
+    margin: 0.5rem;
+  }
+  
+  /* Style the calendar days grid */
+  .react-datepicker__month {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .react-datepicker__day {
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 4px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .react-datepicker__day:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .react-datepicker__day--selected {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .react-datepicker__day--disabled {
+    color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Style the month navigation buttons (prev/next) */
+  .react-datepicker__navigation {
+    background-color: #213f3f;
+    color: white;
+    border: white 1px ;
+ 
+    
+    font-size: 12px;
+   padding:0.5em;
+  }
+  
+  .react-datepicker__navigation--previous {
+    float:left;
+  }
+  
+  .react-datepicker__navigation--next {
+    float:right;
+  }
+
+    
+  .react-datepicker__aria-live {
+    display:none;
+  }
+  
+  /* Add some spacing for better layout */
+  .react-datepicker__month-container {
+    padding: 10px;
+  }
+  
+  .react-datepicker__week {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+
+  @keyframes fader {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+  }
+ 
