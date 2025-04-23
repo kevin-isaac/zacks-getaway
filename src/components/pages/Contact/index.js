@@ -19,12 +19,14 @@ const Contact = () => {
 
 
         <div className="container grid"  >
+        <FadeInSection>
           <div className="content-right">
-            <FadeInSection>
-              <img className="contact-image"  w={"100%"} src={roadImage} alt="contactPhoto" />
-              <img className="profile-image"  w={"100%"} src={hostImage} alt="contactPhoto" />
-            </FadeInSection>
+            
+              <img className="contact-image"  w={"100%"} src={roadImage} alt="Road to Ocean" />
+              <img className="profile-image"  w={"100%"} src={hostImage} alt="Hosts" />
+            
           </div>
+          </FadeInSection>
           <div className="content-left" >
             <p>
               For enquiries or bookings, you can call or Whatsapp your hosts: Miss Joan or Mister Isaac at the following numbers:

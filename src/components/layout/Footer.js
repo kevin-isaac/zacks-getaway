@@ -37,6 +37,7 @@ const Footer = () => {
           src={logoWhiteImage}
           alt="zack's getaway"
         />
+       
         <nav className="site-footer-nav">
           <h4>Sitemap</h4>
           <ul>
@@ -56,6 +57,8 @@ const Footer = () => {
               </p>
             ))}
           </address>
+          <br/>
+          <small>Sample Site by Kevin Isaac</small>
         </div>
         <div className="site-footer-social">
           <h4>Connect</h4>
